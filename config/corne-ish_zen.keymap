@@ -35,7 +35,7 @@
 // | (SHFT       |  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E  |  O  |  i  |    '      |
 // | CTRL        |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  |   SHFT)   |
 //                      | ALT | LWR | SPC |   | ENT | RSE  | ALT |
-                        label = "QDRWB";
+                        label = "wkman";
                         bindings = <
    &kp TAB         AS(Q) AS(D) AS(R) AS(W) AS(B)   AS(J) AS(F)  AS(U)     AS(P)   AS(SEMI)    AS(KP_MINUS)
    &mt LSHFT LPAR  AS(A) AS(S) AS(H) AS(T) AS(G)   AS(Y) AS(N)  AS(E)     AS(O)   AS(I)       AS(SQT)
