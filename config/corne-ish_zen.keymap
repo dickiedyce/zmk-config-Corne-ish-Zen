@@ -30,6 +30,7 @@
         keymap {
                 compatible = "zmk,keymap";
 
+                default_layer {
 // -------------------------------------------------------------------------------------
 // | TAB         |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U  |  P  |  ;  |    -      |
 // | (SHFT       |  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E  |  O  |  i  |    '      |
@@ -42,8 +43,6 @@
    &kp LCTRL       AS(Z) AS(X) AS(M) AS(C) AS(V)   AS(K) AS(L)  AS(COMMA) AS(DOT) AS(FSLH) &mt RSHFT RPAR
                                &kp LCMD  &mo 1 &kp SPACE &kp RET &mo 2  &kp RALT
                         >;
-
-
                 };
 
                 lower_layer {
