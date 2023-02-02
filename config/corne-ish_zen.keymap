@@ -30,19 +30,20 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer {
 // -------------------------------------------------------------------------------------
-// |  TAB  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |    -      |
-// | CTRL  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |    '      |
-// | (SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |   SHFT)   |
-//                     | ALT | LWR | SPC |   | ENT | RSE  | ALT |
-                        label = "QWERTY";
+// | TAB         |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U  |  P  |  ;  |    -      |
+// | (SHFT       |  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E  |  O  |  i  |    '      |
+// | CTRL        |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  |   SHFT)   |
+//                      | ALT | LWR | SPC |   | ENT | RSE  | ALT |
+                        label = "QDRWB";
                         bindings = <
-   &kp TAB        AS(Q) AS(W) AS(E) AS(R) AS(T)   AS(Y) AS(U)  AS(I)     AS(O)   AS(P)    AS(KP_MINUS)
-   &kp LCTRL      AS(A) AS(S) AS(D) AS(F) AS(G)   AS(H) AS(J)  AS(K)     AS(L)   AS(SEMI) AS(SQT)
-   &mt LSHFT LPAR AS(Z) AS(X) AS(C) AS(V) AS(B)   AS(N) AS(M)  AS(COMMA) AS(DOT) AS(FSLH) &mt RSHFT RPAR
+   &kp TAB         AS(Q) AS(D) AS(R) AS(W) AS(B)   AS(J) AS(F)  AS(U)     AS(P)   AS(SEMI)    AS(KP_MINUS)
+   &mt LSHFT LPAR  AS(A) AS(S) AS(H) AS(T) AS(G)   AS(Y) AS(N)  AS(E)     AS(O)   AS(I)       AS(SQT)
+   &kp LCTRL       AS(Z) AS(X) AS(M) AS(C) AS(V)   AS(K) AS(L)  AS(COMMA) AS(DOT) AS(FSLH) &mt RSHFT RPAR
                                &kp LCMD  &mo 1 &kp SPACE &kp RET &mo 2  &kp RALT
                         >;
+
+
                 };
 
                 lower_layer {
