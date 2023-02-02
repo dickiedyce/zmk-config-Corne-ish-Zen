@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define AS(keycode) &as LS(keycode) keycode
-#define QWERTY 0
+#define WKMAN 0
 #define LOWER 1
 #define RAISE 2
 #define ADJUST 3
@@ -36,7 +36,7 @@
 // | (SHFT       |  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E  |  O  |  i  |    '      |
 // | CTRL        |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  |   SHFT)   |
 //                      | ALT | LWR | SPC |   | ENT | RSE  | ALT |
-                        label = "wkman";
+                        label = "WKMAN";
                         bindings = <
    &kp TAB         AS(Q) AS(D) AS(R) AS(W) AS(B)   AS(J) AS(F)  AS(U)     AS(P)   AS(SEMI)    AS(KP_MINUS)
    &mt LSHFT LPAR  AS(A) AS(S) AS(H) AS(T) AS(G)   AS(Y) AS(N)  AS(E)     AS(O)   AS(I)       AS(SQT)
